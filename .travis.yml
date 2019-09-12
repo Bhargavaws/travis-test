@@ -14,6 +14,7 @@ deploy:
 #Roll out any terraform changes required
 - provider: script
   script: 
+  - ./travis_wait 30
     - ./terraform apply
   skip_cleanup: true
   on:
