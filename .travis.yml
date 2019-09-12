@@ -14,7 +14,7 @@ deploy:
 #Roll out any terraform changes required
 - provider: script
   script: 
-    - ./terraform apply -auto-approve
+    - ./terraform apply
   skip_cleanup: true
   on:
     branch: master
